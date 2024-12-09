@@ -1,0 +1,94 @@
+$font-stack: Arial, sans-serif;
+$primary-color: #000;
+$secondary-color: #f0eec3;
+$disable-color: rgb(201, 189, 189);
+$accent-color: #fd6506;
+$alert-color: rgb(207, 12, 12);
+
+body {
+    font-family: $font-stack;
+    // margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    background-color: $secondary-color;
+}
+
+.game-container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 34px;
+    color: $accent-color;
+}
+
+.hangman-image {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.word-display {
+    font-size: 24px;
+    letter-spacing: 10px;
+    margin: 20px 0;
+    padding: 50px;
+}
+
+.alphabet-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    button {
+        background: $accent-color;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+
+        &:disabled {
+            background: $disable-color;
+            cursor: not-allowed;
+        }
+    }
+}
+
+.guesses-left,
+.message {
+    font-size: 22px;
+    font-weight: bold;
+    color: $alert-color;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.reset-button {
+    background: $accent-color;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 210px;
+}
