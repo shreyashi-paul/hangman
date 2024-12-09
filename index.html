@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer type="module"></script>
+    <title>Hangman</title>
+  </head>
+
+  <body>
+    <div class="game-container">
+      <h1>Hangman</h1>
+      <img class="hangman-image" src="./assets/img/h-0.jpg" alt="hangman" />
+      <p class="word-display" id="word-display">_ _ _ _ _ _</p>
+      <div class="alphabet-buttons" id="alphabet-buttons"></div>
+      <p class="guesses-left" id="guesses-left">Guesses Left: 6</p>
+      <div class="message" id="message"></div>
+      <button class="reset-button" id="reset-button">👉 Play Again</button>
+    </div>
+  </body>
+</html>
